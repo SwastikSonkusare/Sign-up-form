@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 56.25em) {
+        flex-direction: column;
+    }
+
+    .left-section {
+        width: 50%;
+
+        &__header {
+            color: white;
+            font-family: inherit;
+            font-size: 3.8rem;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        &__paragraph {
+            margin-top: 2.7rem;
+
+            color: white;
+            font-family: inherit;
+            font-size: 1.3rem;
+            font-weight: 400;
+            max-width: 40rem;
+        }
+    }
+
+    .right-section {
+        margin-left: 6rem;
+
+
+        &__button--1 {
+            border: none;
+            border-radius: 7px;
+            padding: 1rem 8rem;
+            color: white;
+            font-family: inherit;
+            font-weight: 600;
+            background-color: hsl(248, 32%, 49%);
+            margin-bottom: 2rem;
+            box-shadow: 0 .6rem 0rem rgba(0, 0, 0, 0.2);
+        }
+        
+        &__button--2 {
+            padding: 1.3rem 0;
+            margin-top: 1.2rem;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 1.1rem;
+            background-color:  hsl(0, 100%, 74%) ;
+        }
+
+        &__paragraph {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.2rem;
+        }
+
+        &__span--1 {
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+        &__span--2 {
+            font-weight: 600;
+            font-size: .8rem;
+            color: hsl(246, 25%, 77%);
+        }
+
+        &__span--3 {
+            font-weight: 700;
+            font-size: 1rem;
+            color: hsl(0, 100%, 74%);
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 2rem;
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 .6rem 0rem rgba(0, 0, 0, 0.2);
+        }
+
+        &__input {
+            padding: 1rem 1rem 1rem 2.6rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            font-family: inherit;
+            margin: .6rem 0;
+            border: none;
+            border-radius: 4px;
+            border: 1px solid hsl(154, 59%, 51%);
+            
+            &:focus,
+            &:focus-visible {
+                outline: none;
+                border: 2px solid hsl(0, 100%, 74%) ;
+            }
+        }
+    }
+}
+
+::placeholder { 
+    color:  hsl(0, 100%, 74%) ;
+    font-weight: 600;
+    font-family: inherit;
+  }
+
+.right-section__input:focus ::placeholder {
+    color: black;
+}
