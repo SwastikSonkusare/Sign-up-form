@@ -36,21 +36,38 @@
         <span class="right-section__span--1">then $20/mo. thereafter</span>
       </button>
 
-      <form  class="right-section__form">
-        <input type="text" class="right-section__input" placeholder="First Name">
-        <input type="text" class="right-section__input" placeholder="Last Name">
-        <input type="email" class="right-section__input" placeholder="Email Address">
-        <input type="password" class="right-section__input" placeholder="Password">
-        <button class="right-section__button--2">
+      <form class="right-section__form">
+
+        <div class="right-section__form-control">
+          <input type="text" class="right-section__input" id="first-name" placeholder="First Name">
+          <img src="images/icon-error.svg" alt="Error" id="firstNameError">
+          <small id="field-1">First Name cannot be empty</small>
+        </div>
+        
+        <div class="right-section__form-control">
+          <input type="text" class="right-section__input" id="last-name" placeholder="Last Name">
+          <img src="images/icon-error.svg" alt="Error" id="lastNameError">
+          <small id="field-2">Last Name cannot be empty</small>
+        </div>
+        
+        <div class="right-section__form-control">
+          <input type="email" class="right-section__input" id="email" placeholder="Email Address">
+          <img src="images/icon-error.svg" alt="Error" id="emailError">
+          <small id="field-3">Looks like this is not an email</small>
+        </div>
+        
+        <div class="right-section__form-control">
+          <input type="password" class="right-section__input" id="password" placeholder="Password">
+          <img src="images/icon-error.svg" alt="Error"  id="passwordError">
+          <small id="field-4">Password cannot be empty</small>
+        </div>
+        <button type="submit" class="right-section__button--2">
           Claim your free trial         
         </button>
-  
-        <p class="right-section__paragraph">
-          <span class="right-section__span--2">
-            By clicking the button, you are agreeing to our &nbsp;
-          </span> 
-          <span class="right-section__span--3">Terms and Services</span>
-        </p>
+        <small class="right-section__span--2">
+          By clicking the button, you are agreeing to our
+          <a href="#" class="right-section__span--3">Terms and Services</a>
+        </small>
       </div>
       </form>
 
@@ -64,5 +81,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+
+  <script src="index.js"></script>
 </body>
 </html>
